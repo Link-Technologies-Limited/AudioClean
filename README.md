@@ -113,11 +113,33 @@ Outputs:
 - CI artifact build: `.github/workflows/build-binaries.yml`
 - Release build + publish on `v*` tags: `.github/workflows/release.yml`
 
-Tagging a release (example):
+## Release Notes Template
 
-```bash
-git tag v1.1.0
-git push origin v1.1.0
+Use this template in the GitHub Release description:
+
+```md
+## audioclean vX.Y.Z
+
+### Highlights
+- 
+
+### Added
+- 
+
+### Changed
+- 
+
+### Fixed
+- 
+
+### Breaking Changes
+- None
+
+### Upgrade Notes
+- 
+
+### Checksums / Assets
+- `audioclean-linux-x86_64`
+- `audioclean-darwin-<arch>`
+- `audioclean-windows-<arch>.exe`
 ```
-
-That release workflow will build binaries on Linux/macOS/Windows and attach them to the GitHub Release.
