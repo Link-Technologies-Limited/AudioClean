@@ -12,8 +12,21 @@ dependencies = [
   "prompt_toolkit>=3.0.43",
 ]
 
+[project.optional-dependencies]
+build = [
+  "pyinstaller>=6.0.0",
+]
+
 [project.scripts]
-audioclean = "audioclean.cli:app"
+audioclean = "audioclean.commands.cli:app"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["audioclean*"]
+exclude = ["packaging*", "scripts*"]
 
 [tool.ruff]
 line-length = 100

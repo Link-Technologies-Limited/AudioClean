@@ -1,0 +1,63 @@
+# =========================
+# Python bytecode / cache
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# =========================
+# Virtual environments
+# =========================
+.venv/
+venv/
+ENV/
+env/
+
+# =========================
+# Build / packaging output
+# =========================
+build/
+dist/
+release/
+*.egg-info/
+.eggs/
+
+# =========================
+# Test / coverage output
+# =========================
+.pytest_cache/
+.coverage
+htmlcov/
+
+# =========================
+# Audioclean runtime output
+# =========================
+.audioclean/
+*.json
+*.db
+*.sqlite
+*.sqlite3
+*.log
+
+# Allow example files
+!examples/
+!examples/*.json
+
+# =========================
+# Editor / OS junk
+# =========================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# =========================
+# Tooling caches
+# =========================
+.ruff_cache/
+.mypy_cache/
+
+# =========================
+# Local config overrides
+# =========================
+config.local.*
