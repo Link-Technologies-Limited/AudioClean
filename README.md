@@ -25,6 +25,20 @@ Metadata resolver/tag writing/art fetch are still extension points:
 - SQLite (bundled with Python)
 - Chromaprint `fpcalc` in `PATH` (for fingerprinting)
 
+## Install (npm)
+
+Install globally:
+
+```bash
+npm install -g @linktechnologies/audioclean
+```
+
+Or install in a project:
+
+```bash
+npm install @linktechnologies/audioclean
+```
+
 ## Quick Start
 
 ```bash
@@ -112,34 +126,3 @@ Outputs:
 
 - CI artifact build: `.github/workflows/build-binaries.yml`
 - Release build + publish on `v*` tags: `.github/workflows/release.yml`
-
-## Release Notes Template
-
-Use this template in the GitHub Release description:
-
-```md
-## audioclean vX.Y.Z
-
-### Highlights
-- 
-
-### Added
-- 
-
-### Changed
-- 
-
-### Fixed
-- 
-
-### Breaking Changes
-- None
-
-### Upgrade Notes
-- 
-
-### Checksums / Assets
-- `audioclean-linux-x86_64`
-- `audioclean-darwin-<arch>`
-- `audioclean-windows-<arch>.exe`
-```
